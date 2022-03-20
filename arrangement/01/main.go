@@ -56,7 +56,7 @@ func permute(nums []int, qHorse []int) {
 			newLeftNums := make([]int, len(leftNums)-1)
 			count := 0
 			for i, v := range leftNums {
-				if i != index {
+				if i != index { //关键步骤
 					newLeftNums[count] = v
 					count++
 				}
